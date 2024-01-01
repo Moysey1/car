@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда авто Автопарк</title>
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container header__container">
+        <header class="flex">
+            <div class="header__logo" tabindex="0">
+                <a class="header__logo-link" href="#" tabindex="-1">
+                    Rentdrive
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list list-reset flex">
+                    <li class="header__nav-item" tabindex="0">
+                        <a class="header__nav-item__link" href="#" tabindex="-1">
+                            Автопарк
+                        </a>
+                    </li>
+                    <li class="header__nav-item" tabindex="0">
+                        <a class="header__nav-item__link" href="#" tabindex="-1">
+                            Условия 
+                        </a>
+                    </li>
+                    <li class="header__nav-item header__nav-item__service" tabindex="0">
+                        <span class="header__nav-item--arrow">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.94 6.71249L10.05 11.6025C9.4725 12.18 8.5275 12.18 7.95 11.6025L3.06 6.71249" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>    
+                        </span>
+                        <a class="header__nav-item__link" href="#" tabindex="-1">
+                            Услуги
+                        </a>
+                        <div class="header__nav-item__dropdown">
+                            <ul class="header__nav-item__dropdown-list list-reset">
+                                <li class="header__nav-item__dropdown-item" tabindex="0">
+                                    <a class="header__nav-item__dropdown-item__link" href="#" tabindex="-1">Аренда авто без водителя</a>
+                                </li>
+                                <li class="header__nav-item__dropdown-item" tabindex="0">
+                                    <a class="header__nav-item__dropdown-item__link" href="#" tabindex="-1">Аренда авто посуточно</a>
+                                </li>
+                                <li class="header__nav-item__dropdown-item" tabindex="0">
+                                    <a class="header__nav-item__dropdown-item__link" href="#" tabindex="-1">Аренда авто с водителем</a>
+                                </li>
+                                <li class="header__nav-item__dropdown-item" tabindex="0">
+                                    <a class="header__nav-item__dropdown-item__link" href="#" tabindex="-1">Аренда авто без стажа</a>
+                                </li>
+                                <li class="header__nav-item__dropdown-item" tabindex="0">
+                                    <a class="header__nav-item__dropdown-item__link" href="#" tabindex="-1">Аренда авто на свадьбу</a>
+                                </li>
+                                <li class="header__nav-item__dropdown-item" tabindex="0">
+                                    <a class="header__nav-item__dropdown-item__link" href="#" tabindex="-1">Аренда авто без залога</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__nav-item" tabindex="0">
+                        <a class="header__nav-item__link" href="#" tabindex="-1">
+                            Стоимость
+                        </a>
+                    </li>
+                    <li class="header__nav-item" tabindex="0">
+                        <a class="header__nav-item__link" href="#" tabindex="-1">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="header__nav-item" tabindex="0">
+                        <a class="header__nav-item__link" href="#" tabindex="-1">
+                            Статьи
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__connect flex" >
+                <a class="header__connect-tel" href="tel:+79885291166" >+7 (988) 529-11-66</a>
+                <button class="header__connect-btn btn" >
+                    <a class="header__connect-btn__link" href="tel:+79885291166" tabindex="-1">
+                        Позвонить
+                    </a>
+                </button>
+            </div>
+            <div class="burger__wrapper">
+                <button class="btn-reset burger" aria-label="Раскрытия и закрытие навигации ">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+            </div>
+            
+        </header>
+    </div>
+    <main>
+        <section class="container car__park-decs">
+            <p class="car__park-decs__sub-title sub-title">
+                Автомобили
+            </p>
+            <h2 class="car__park-decs__title title"> <span class="title-custom">Наш</span> автопарк</h2>
+            <h3 class="car__park-decs__caption">Фильтры</h3>
+            <button class="btn-reset car__park-decs__btn"> Сбросить фильтры </button>
+        </section>
+        <section class="car__park container flex">
+            <aside class="car__park-aside">
+                <form class="car__park-form car__park-form-top flex">
+                    <h4 class="car__park-form__filter"> Тип автомобиля</h4>
+                    <label class="car__park-form__label">
+                        <input class="car__park-form__input" type="checkbox"> 
+                        <span class="car__park-form__text">Эконом</span>
+                    </label>
+                    <label class="car__park-form__label">
+                        <input class="car__park-form__input" type="checkbox"> 
+                        <span class="car__park-form__text">Стандарт</span>
+                    </label>
+                    <label class="car__park-form__label">
+                        <input class="car__park-form__input" type="checkbox">
+                        <span class="car__park-form__text">Комфорт + Кроссоверы</span>
+                    </label>
+                </form>
+                <form class="car__park-form flex">
+                    <h4 class="car__park-form__filter"> Трансмиссия </h4>
+                    <label class="car__park-form__label">
+                        <input class="car__park-form__input" type="checkbox"> 
+                        <span class="car__park-form__text">Автоматическая</span>
+                    </label>
+                    <label class="car__park-form__label">
+                        <input class="car__park-form__input" type="checkbox"> 
+                        <span class="car__park-form__text">Механическая</span>
+                    </label>
+                </form>
+            </aside>
+            <div class="flex car__park-list-wrapper">
+            <ul class="catalog__car-list list-reset car__park-list">
+                <li class="catalog__car-item flex" tabindex="0">
+                    <div class="catalog__car-item__img">
+                        <div class="catalog__car-item__img-bage">Хит</div>
+                        <img src="img/catalog-car1920.png" alt="Фото машины">
+                    </div>
+                    <div class="catalog__car-item__desc">
+                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
+                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
+                    </div>
+                    <ul class="catalog__car-item__decc-list list-reset">
+                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
+                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
+                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
+                    </ul>
+                </li>
+                <li class="catalog__car-item flex" tabindex="0">
+                    <div class="catalog__car-item__img">
+                        <div class="catalog__car-item__img-bage">Хит</div>
+                        <img src="img/catalog-car1920.png" alt="Фото машины">
+                    </div>
+                    <div class="catalog__car-item__desc">
+                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
+                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
+                    </div>
+                    <ul class="catalog__car-item__decc-list list-reset">
+                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
+                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
+                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
+                    </ul>
+                </li>
+                <li class="catalog__car-item flex" tabindex="0">
+                    <div class="catalog__car-item__img">
+                        <div class="catalog__car-item__img-bage">Хит</div>
+                        <img src="img/catalog-car1920.png" alt="Фото машины">
+                    </div>
+                    <div class="catalog__car-item__desc">
+                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
+                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
+                    </div>
+                    <ul class="catalog__car-item__decc-list list-reset">
+                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
+                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
+                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
+                    </ul>
+                </li>
+                <li class="catalog__car-item flex" tabindex="0">
+                    <div class="catalog__car-item__img">
+                        <div class="catalog__car-item__img-bage">Хит</div>
+                        <img src="img/catalog-car1920.png" alt="Фото машины">
+                    </div>
+                    <div class="catalog__car-item__desc">
+                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
+                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
+                    </div>
+                    <ul class="catalog__car-item__decc-list list-reset">
+                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
+                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
+                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
+                    </ul>
+                </li>
+                <li class="catalog__car-item flex" tabindex="0">
+                    <div class="catalog__car-item__img">
+                        <div class="catalog__car-item__img-bage">Хит</div>
+                        <img src="img/catalog-car1920.png" alt="Фото машины">
+                    </div>
+                    <div class="catalog__car-item__desc">
+                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
+                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
+                    </div>
+                    <ul class="catalog__car-item__decc-list list-reset">
+                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
+                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
+                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
+                    </ul>
+                </li>
+                <li class="catalog__car-item flex" tabindex="0">
+                    <div class="catalog__car-item__img">
+                        <div class="catalog__car-item__img-bage">Хит</div>
+                        <img src="img/catalog-car1920.png" alt="Фото машины">
+                    </div>
+                    <div class="catalog__car-item__desc">
+                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
+                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
+                    </div>
+                    <ul class="catalog__car-item__decc-list list-reset">
+                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
+                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
+                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
+                    </ul>
+                </li>
+                <li class="catalog__car-item flex" tabindex="0">
+                    <div class="catalog__car-item__img">
+                        <div class="catalog__car-item__img-bage">Хит</div>
+                        <img src="img/catalog-car1920.png" alt="Фото машины">
+                    </div>
+                    <div class="catalog__car-item__desc">
+                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
+                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
+                    </div>
+                    <ul class="catalog__car-item__decc-list list-reset">
+                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
+                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
+                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
+                    </ul>
+                </li>
+                <li class="catalog__car-item flex" tabindex="0">
+                    <div class="catalog__car-item__img">
+                        <div class="catalog__car-item__img-bage">Хит</div>
+                        <img src="img/catalog-car1920.png" alt="Фото машины">
+                    </div>
+                    <div class="catalog__car-item__desc">
+                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
+                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
+                    </div>
+                    <ul class="catalog__car-item__decc-list list-reset">
+                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
+                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
+                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
+                    </ul>
+                </li>
+                <li class="catalog__car-item flex" tabindex="0">
+                    <div class="catalog__car-item__img">
+                        <div class="catalog__car-item__img-bage">Хит</div>
+                        <img src="img/catalog-car1920.png" alt="Фото машины">
+                    </div>
+                    <div class="catalog__car-item__desc">
+                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
+                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
+                    </div>
+                    <ul class="catalog__car-item__decc-list list-reset">
+                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
+                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
+                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
+                    </ul>
+                </li>
+                <li class="catalog__car-item flex" tabindex="0">
+                    <div class="catalog__car-item__img">
+                        <div class="catalog__car-item__img-bage">Хит</div>
+                        <img src="img/catalog-car1920.png" alt="Фото машины">
+                    </div>
+                    <div class="catalog__car-item__desc">
+                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
+                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
+                    </div>
+                    <ul class="catalog__car-item__decc-list list-reset">
+                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
+                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
+                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
+                    </ul>
+                </li>
+                <li class="catalog__car-item flex" tabindex="0">
+                    <div class="catalog__car-item__img">
+                        <div class="catalog__car-item__img-bage">Хит</div>
+                        <img src="img/catalog-car1920.png" alt="Фото машины">
+                    </div>
+                    <div class="catalog__car-item__desc">
+                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
+                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
+                    </div>
+                    <ul class="catalog__car-item__decc-list list-reset">
+                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
+                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
+                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
+                    </ul>
+                </li>
+                <li class="catalog__car-item flex" tabindex="0">
+                    <div class="catalog__car-item__img">
+                        <div class="catalog__car-item__img-bage">Хит</div>
+                        <img src="img/catalog-car1920.png" alt="Фото машины">
+                    </div>
+                    <div class="catalog__car-item__desc">
+                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
+                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
+                    </div>
+                    <ul class="catalog__car-item__decc-list list-reset">
+                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
+                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
+                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="btn-reset car__park-list__btn"> Показать еще </button>
+        </div>
+            
+            
+        </section>
+        <section class="conditions container">
+            <p class="conditions__sub-title sub-title">Спрашивали? Отвечаем</p>
+            <h2 class="conditions__title title">
+                Условия <span class="title-custom">аренды</span> автомобиля
+            </h2>
+            <ul class="conditions__list list-reset flex">
+                <li class="conditions__item flex">
+                    <div class="conditions__item-desc__wrapper">
+                        <div class="conditions__item-desc flex">
+                            <h3 class="conditions__item-desc__title">Как оформить заказ </h3>
+                            <button class="btn-reset conditions__item-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M19.92 9.48535L13.4 16.0054C12.63 16.7754 11.37 16.7754 10.6 16.0054L4.07999 9.48535" stroke="#47484D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="conditions__item-desc__text">
+                            Можете оставить заявку на нашем сайте, менеджер свяжется с Вами и ответит на все Ваши вопросы, Вы можете позвонить по телефону, указанному на сайте, связаться с нами через WhatsApp, это можно сделать с главной страницы сайта нажав на соответствующую иконку.
+                        </div>
+                    </div>
+                </li>
+                <li class="conditions__item flex">
+                    <div class="conditions__item-desc__wrapper">
+                        <div class="conditions__item-desc flex">
+                            <h3 class="conditions__item-desc__title">Есть ли суточный лимит пробега?</h3>
+                            <button class="btn-reset conditions__item-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M19.92 9.48535L13.4 16.0054C12.63 16.7754 11.37 16.7754 10.6 16.0054L4.07999 9.48535" stroke="#47484D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="conditions__item-desc__text">
+                            Можете оставить заявку на нашем сайте, менеджер свяжется с Вами и ответит на все Ваши вопросы, Вы можете позвонить по телефону, указанному на сайте, связаться с нами через WhatsApp, это можно сделать с главной страницы сайта нажав на соответствующую иконку.
+                        </div>
+                    </div>
+                </li>
+                <li class="conditions__item flex">
+                    <div class="conditions__item-desc__wrapper">
+                        <div class="conditions__item-desc flex">
+                            <h3 class="conditions__item-desc__title">Включено ли страхование в стоимость аренды?</h3>
+                            <button class="btn-reset conditions__item-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M19.92 9.48535L13.4 16.0054C12.63 16.7754 11.37 16.7754 10.6 16.0054L4.07999 9.48535" stroke="#47484D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="conditions__item-desc__text">
+                            Можете оставить заявку на нашем сайте, менеджер свяжется с Вами и ответит на все Ваши вопросы, Вы можете позвонить по телефону, указанному на сайте, связаться с нами через WhatsApp, это можно сделать с главной страницы сайта нажав на соответствующую иконку.
+                        </div>
+                    </div>
+                </li>
+                <li class="conditions__item flex">
+                    <div class="conditions__item-desc__wrapper">
+                        <div class="conditions__item-desc flex">
+                            <h3 class="conditions__item-desc__title">Могу ли я выезжать за пределы Краснодарского края?</h3>
+                            <button class="btn-reset conditions__item-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M19.92 9.48535L13.4 16.0054C12.63 16.7754 11.37 16.7754 10.6 16.0054L4.07999 9.48535" stroke="#47484D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="conditions__item-desc__text">
+                            Можете оставить заявку на нашем сайте, менеджер свяжется с Вами и ответит на все Ваши вопросы, Вы можете позвонить по телефону, указанному на сайте, связаться с нами через WhatsApp, это можно сделать с главной страницы сайта нажав на соответствующую иконку.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class=" footer__container ">
+            <div class="footer__top flex">
+                <ul class="footer__top-contact__list list-reset flex">
+                    <li class="footer__top-contact__item" tabindex="0">
+                        <a class="footer__top-contact__item-tel" href="tel:+79885291166" tabindex="-1">+7 (988) 529-11-66</a>
+                    </li>
+                    <li class="footer__top-contact__item" tabindex="0">
+                        <a class="footer__top-contact__item-mail" href="mailto:info@rentdrive23.ru" tabindex="-1">info@rentdrive23.ru</a>
+                    </li>
+                    <li class="footer__top-contact__item" tabindex="0">
+                        <a class="footer__top-contact__item-adress" href="geo:45.260465,38.838203" tabindex="-1">г. Краснодар, ул. Пушкина д 21 к4</a>
+                    </li>
+                </ul>
+                <ul class="footer__top-catalog__list list-reset flex">
+                    <h3 class="footer__top-title">
+                        Каталог авто
+                    </h3>
+                    <li class="footer__top-catalog__item" tabindex="0">
+                        <a href="#" class="footer__top-catalog__item-link" tabindex="-1">
+                            Аренда авто без водителя
+                        </a>
+                    </li>
+                    <li  class="footer__top-catalog__item" tabindex="0">
+                        <a href="#" class="footer__top-catalog__item-link" tabindex="-1"> 
+                            Аренда авто посуточно
+                        </a>
+                    </li>
+                    <li class="footer__top-catalog__item" tabindex="0">
+                        <a href="#" class="footer__top-catalog__item-link" tabindex="-1">
+                            Аренда авто с водителем
+                        </a>
+                    </li>
+                    <li class="footer__top-catalog__item" tabindex="0">
+                        <a href="#" class="footer__top-catalog__item-link" tabindex="-1">
+                            Аренда авто без стажа
+                        </a>
+                    </li>
+                    <li class="footer__top-catalog__item" tabindex="0">
+                        <a href="#" class="footer__top-catalog__item-link" tabindex="-1">
+                            Аренда авто на свадьбу
+                        </a>
+                    </li>
+                    <li class="footer__top-catalog__item" tabindex="0">
+                        <a href="#" class="footer__top-catalog__item-link" tabindex="-1">
+                            Аренда авто без залога
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__top-info__list list-reset flex">
+                    <li class="footer__top-info__item" tabindex="0">
+                        <a class="footer__top-info__item-link" href="#" tabindex="-1">
+                            Условия аренды
+                        </a>
+                    </li>
+                    <li class="footer__top-info__item" tabindex="0">
+                        <a class="footer__top-info__item-link" href="#" tabindex="-1">
+                            Стоимость
+                        </a>
+                    </li>
+                    <li class="footer__top-info__item" tabindex="0">
+                        <a class="footer__top-info__item-link" href="#" tabindex="-1">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="footer__top-info__item" tabindex="0">
+                        <a class="footer__top-info__item-link" href="#" tabindex="-1">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom flex">
+                <div class="footer__bottom-left flex">
+                    <span class="footer__bottom-left__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="199" height="27" viewBox="0 0 199 27" fill="none">
+                            <path d="M23.5761 0C28.4814 0 30.5102 2.46857 29.6627 7.40572L29.0464 11.07C28.6611 13.2814 27.9934 14.8886 27.0432 15.8914C26.0929 16.8686 24.6804 17.4471 22.8056 17.6271L27.1587 27H18.7222L14.8699 18.3214H9.90042L8.32098 27H0L4.77686 0H23.5761ZM12.0192 6.13286L10.9405 12.3814H18.4911C19.2872 12.3814 19.8394 12.24 20.1475 11.9571C20.4814 11.6743 20.7126 11.1343 20.841 10.3371L21.2262 8.25429C21.3546 7.45714 21.2776 6.90429 20.9951 6.59571C20.7382 6.28714 20.2118 6.13286 19.4156 6.13286H12.0192Z" fill="white"/>
+                            <path d="M47.1074 6.32572C49.5471 6.32572 51.255 6.93 52.2309 8.13857C53.2068 9.32143 53.4893 11.1471 53.0784 13.6157L52.385 17.7814H37.1299L36.8987 19.0543C36.7703 19.8514 36.8217 20.4043 37.0528 20.7129C37.3097 21.0214 37.8361 21.1757 38.6323 21.1757H42.6387C43.2807 21.1757 43.7302 21.06 43.987 20.8286C44.2438 20.5971 44.4364 20.16 44.5648 19.5171L44.6419 19.0929H52.1539L51.7686 21.1757C51.3834 23.31 50.6772 24.8143 49.6499 25.6886C48.6226 26.5629 47.0688 27 44.9886 27H34.9726C30.1187 27 28.1155 24.5571 28.963 19.6714L30.1187 13.0371C30.5296 10.5686 31.3257 8.83286 32.5071 7.83C33.7142 6.82714 35.5504 6.32572 38.0159 6.32572H47.1074ZM37.9003 13.3071L37.8233 13.8471H45.5664L45.6435 13.3843C45.7719 12.5871 45.7077 12.0471 45.4509 11.7643C45.2197 11.4557 44.7061 11.3014 43.9099 11.3014H40.2503C39.4798 11.3014 38.9276 11.4429 38.5938 11.7257C38.2599 12.0086 38.0288 12.5357 37.9003 13.3071Z" fill="white"/>
+                            <path d="M72.2159 6.32572C77.1469 6.32572 79.1629 8.79429 78.2641 13.7314L75.9527 27H68.1325L70.2513 14.85C70.4054 14.0529 70.3412 13.5 70.0586 13.1914C69.8018 12.8829 69.2754 12.7286 68.4792 12.7286H67.0153C65.6799 12.7286 64.6397 13.0114 63.895 13.5771L62.9319 14.31L60.659 27H52.8389L56.4985 6.32572H63.0089L63.2401 8.64C64.5242 7.66286 65.6413 7.03286 66.5916 6.75C67.5418 6.46714 68.9415 6.32572 70.7906 6.32572H72.2159Z" fill="white"/>
+                            <path d="M91.0326 12.42L89.8384 19.0543C89.7357 19.6971 89.7871 20.1471 89.9925 20.4043C90.2237 20.6614 90.6731 20.79 91.3408 20.79H96.5029L95.3857 27H86.9492C82.7117 27 80.9781 24.8914 81.7486 20.6743L83.2125 12.42H79.5143L80.5929 6.32572H84.2911L86.641 1.69714H92.9203L92.1113 6.32572H99.0454L97.9668 12.42H91.0326Z" fill="white"/>
+                            <path d="M116.985 0H124.805L120.028 27H113.517L113.325 24.6857C112.041 25.6886 110.936 26.3314 110.012 26.6143C109.087 26.8714 107.7 27 105.851 27H103.848C101.408 27 99.7005 26.4086 98.7246 25.2257C97.7487 24.0171 97.4662 22.1657 97.8771 19.6714L99.0328 13.0371C99.4437 10.5686 100.24 8.83286 101.421 7.83C102.628 6.82714 104.465 6.32572 106.93 6.32572H109.203C110.924 6.32572 112.208 6.44143 113.055 6.67286C113.928 6.87857 114.763 7.35429 115.559 8.1L116.985 0ZM109.511 20.79C110.769 20.79 111.797 20.5071 112.593 19.9414L113.594 19.17L114.519 14.1171L113.749 13.3843C113.184 12.8186 112.221 12.5357 110.859 12.5357H108.895C108.124 12.5357 107.572 12.6771 107.238 12.96C106.93 13.2171 106.712 13.7443 106.583 14.5414L105.851 18.6686C105.723 19.4657 105.787 20.0186 106.044 20.3271C106.301 20.6357 106.827 20.79 107.623 20.79H109.511Z" fill="white"/>
+                            <path d="M140.034 6.32572H141.691L140.342 13.6543H136.452C135.142 13.6543 134.115 13.9371 133.37 14.5029L132.368 15.2357L130.288 27H122.468L126.127 6.32572H131.713L131.983 9.06429C133.472 7.88143 134.705 7.13572 135.681 6.82714C136.657 6.49286 138.108 6.32572 140.034 6.32572Z" fill="white"/>
+                            <path d="M143.19 4.78286L144.037 0H151.973L151.126 4.78286H143.19ZM139.26 27L142.92 6.32572H150.856L147.196 27H139.26Z" fill="white"/>
+                            <path d="M168.948 6.32572H177.693L164.595 27H157.468L151.728 6.32572H159.895L162.36 17.9357L168.948 6.32572Z" fill="white"/>
+                            <path d="M192.846 6.32572C195.286 6.32572 196.994 6.93 197.97 8.13857C198.946 9.32143 199.228 11.1471 198.817 13.6157L198.124 17.7814H182.869L182.638 19.0543C182.509 19.8514 182.561 20.4043 182.792 20.7129C183.049 21.0214 183.575 21.1757 184.371 21.1757H188.378C189.02 21.1757 189.469 21.06 189.726 20.8286C189.983 20.5971 190.175 20.16 190.304 19.5171L190.381 19.0929H197.893L197.508 21.1757C197.122 23.31 196.416 24.8143 195.389 25.6886C194.362 26.5629 192.808 27 190.728 27H180.712C175.858 27 173.854 24.5571 174.702 19.6714L175.858 13.0371C176.269 10.5686 177.065 8.83286 178.246 7.83C179.453 6.82714 181.289 6.32572 183.755 6.32572H192.846ZM183.639 13.3071L183.562 13.8471H191.305L191.382 13.3843C191.511 12.5871 191.447 12.0471 191.19 11.7643C190.959 11.4557 190.445 11.3014 189.649 11.3014H185.989C185.219 11.3014 184.667 11.4429 184.333 11.7257C183.999 12.0086 183.768 12.5357 183.639 13.3071Z" fill="white"/>
+                        </svg>
+                    </span>
+                    <span  class="footer__bottom-left__desc">
+                        2023 ©RENTDRIVE. Все права защищены
+                    </span>
+                </div>
+                <div class="footer__bottom-right">
+                    <p class="footer__bottom-right__text">
+                        RENTDRIVE и логотип RENTDRIVE являются товарными знаками компании ООО "RENTDRIVE", зарегистрированными в России и других странах. Другие наименования и товарные знаки являются собственностью своих законных владельцев
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/JS/index.js"></script>
+</body>
+</html>

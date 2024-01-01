@@ -37,7 +37,7 @@ burger.addEventListener('click' ,
 
   burger.classList.toggle('burger--active');
 
-  menu.classList.toggle('nav--active');
+  menu.classList.toggle('header__nav--active');
 
   document.body.classList.toggle('stop-scroll');
 
@@ -48,7 +48,7 @@ menuLinks.forEach(function (el){
 
     burger.classList.remove('burger--active');
 
-    menu.classList.remove('nav--active');
+    menu.classList.remove('header__nav--active');
 
     document.body.classList.remove('stop-scroll');
 

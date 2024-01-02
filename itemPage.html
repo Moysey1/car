@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аренда авто Автопарк</title>
+    <title>Аренда авто страница товара</title>
     <link rel="stylesheet" href="./css/normalise.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container header__container">
-        <header class="flex">
+        <header class="flex header__product">
             <div class="header__logo" tabindex="0">
                 <a class="header__logo-link" href="#" tabindex="-1">
                     Rentdrive
@@ -95,165 +95,123 @@
         </header>
     </div>
     <main>
-        <section class="container car__park-decs">
-            <p class="car__park-decs__sub-title sub-title">
-                Автомобили
-            </p>
-            <h2 class="car__park-decs__title title"> <span class="title-custom">Наш</span> автопарк</h2>
-            <h3 class="car__park-decs__caption">Фильтры</h3>
-            <button class="btn-reset car__park-decs__btn btn"> Сбросить фильтры </button>
+        <div class="breadcrumb container"> 
+            <ul class="breadcrumb__list list-reset flex">
+                <li class="breadcrumb__item flex">
+                    <span class="breadcrumb-active">Главная</span><span>/</span>
+                </li>
+                
+                <li class="breadcrumb__item flex">
+                    <span class="breadcrumb-active">Наш автопарк</span><span>/</span>
+                </li>
+                
+                <li class="breadcrumb__item flex">
+                    <span class="breadcrumb-end">Hyundai Solaris (2018)</span>
+                </li>
+            </ul>
+        </div>
+        <section class="product container">
+            <h2 class="product__title title">
+                Hyundai Solaris (2018)
+            </h2>
+            <div class="product__info flex">
+                <div class="product__info-image flex">
+                    <div class="product__info-image__main">
+                        <img src="./img/pngwing 2.png" alt="">
+                        <span class="product__info-image__main-bage">Новинка</span>
+                    </div>
+                    <ul class="product__info-image__secondary-list list-reset flex">
+                        <li class="product__info-image__secondary-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 97 97" fill="none">
+                                <rect width="97" height="97" rx="24" fill="#F3F3F3"/>
+                                <mask id="mask0_50_15622" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="97" height="97">
+                                <rect width="97" height="97" rx="16" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_50_15622)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8501 35.3602C26.8501 36.5681 27.8293 37.5473 29.0371 37.5473H68.404C69.6119 37.5473 70.5911 36.5681 70.5911 35.3602C70.5911 34.1523 69.6119 33.1732 68.404 33.1732H29.0371C27.8293 33.1732 26.8501 34.1523 26.8501 35.3602ZM57.4688 41.9214C56.2609 41.9214 55.2817 42.9005 55.2817 44.1084C55.2817 47.732 52.3442 50.6695 48.7206 50.6695C45.097 50.6695 42.1594 47.732 42.1594 44.1084C42.1594 42.9005 41.1803 41.9214 39.9724 41.9214C38.7645 41.9214 37.7853 42.9005 37.7853 44.1084C37.7853 50.1478 42.6812 55.0436 48.7206 55.0436C54.76 55.0436 59.6558 50.1478 59.6558 44.1084C59.6558 42.9005 58.6767 41.9214 57.4688 41.9214Z" fill="#B9B9B9"/>
+                                </g>
+                            </svg>
+                        </li>
+                        <li class="product__info-image__secondary-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 97 97" fill="none">
+                                <rect width="97" height="97" rx="24" fill="#F3F3F3"/>
+                                <mask id="mask0_50_15622" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="97" height="97">
+                                <rect width="97" height="97" rx="16" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_50_15622)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8501 35.3602C26.8501 36.5681 27.8293 37.5473 29.0371 37.5473H68.404C69.6119 37.5473 70.5911 36.5681 70.5911 35.3602C70.5911 34.1523 69.6119 33.1732 68.404 33.1732H29.0371C27.8293 33.1732 26.8501 34.1523 26.8501 35.3602ZM57.4688 41.9214C56.2609 41.9214 55.2817 42.9005 55.2817 44.1084C55.2817 47.732 52.3442 50.6695 48.7206 50.6695C45.097 50.6695 42.1594 47.732 42.1594 44.1084C42.1594 42.9005 41.1803 41.9214 39.9724 41.9214C38.7645 41.9214 37.7853 42.9005 37.7853 44.1084C37.7853 50.1478 42.6812 55.0436 48.7206 55.0436C54.76 55.0436 59.6558 50.1478 59.6558 44.1084C59.6558 42.9005 58.6767 41.9214 57.4688 41.9214Z" fill="#B9B9B9"/>
+                                </g>
+                            </svg>
+                        </li>
+                        <li class="product__info-image__secondary-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 97 97" fill="none">
+                                <rect width="97" height="97" rx="24" fill="#F3F3F3"/>
+                                <mask id="mask0_50_15622" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="97" height="97">
+                                <rect width="97" height="97" rx="16" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_50_15622)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8501 35.3602C26.8501 36.5681 27.8293 37.5473 29.0371 37.5473H68.404C69.6119 37.5473 70.5911 36.5681 70.5911 35.3602C70.5911 34.1523 69.6119 33.1732 68.404 33.1732H29.0371C27.8293 33.1732 26.8501 34.1523 26.8501 35.3602ZM57.4688 41.9214C56.2609 41.9214 55.2817 42.9005 55.2817 44.1084C55.2817 47.732 52.3442 50.6695 48.7206 50.6695C45.097 50.6695 42.1594 47.732 42.1594 44.1084C42.1594 42.9005 41.1803 41.9214 39.9724 41.9214C38.7645 41.9214 37.7853 42.9005 37.7853 44.1084C37.7853 50.1478 42.6812 55.0436 48.7206 55.0436C54.76 55.0436 59.6558 50.1478 59.6558 44.1084C59.6558 42.9005 58.6767 41.9214 57.4688 41.9214Z" fill="#B9B9B9"/>
+                                </g>
+                            </svg>
+                        </li>
+                        <li class="product__info-image__secondary-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 97 97" fill="none">
+                                <rect width="97" height="97" rx="24" fill="#F3F3F3"/>
+                                <mask id="mask0_50_15622" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="97" height="97">
+                                <rect width="97" height="97" rx="16" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_50_15622)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8501 35.3602C26.8501 36.5681 27.8293 37.5473 29.0371 37.5473H68.404C69.6119 37.5473 70.5911 36.5681 70.5911 35.3602C70.5911 34.1523 69.6119 33.1732 68.404 33.1732H29.0371C27.8293 33.1732 26.8501 34.1523 26.8501 35.3602ZM57.4688 41.9214C56.2609 41.9214 55.2817 42.9005 55.2817 44.1084C55.2817 47.732 52.3442 50.6695 48.7206 50.6695C45.097 50.6695 42.1594 47.732 42.1594 44.1084C42.1594 42.9005 41.1803 41.9214 39.9724 41.9214C38.7645 41.9214 37.7853 42.9005 37.7853 44.1084C37.7853 50.1478 42.6812 55.0436 48.7206 55.0436C54.76 55.0436 59.6558 50.1478 59.6558 44.1084C59.6558 42.9005 58.6767 41.9214 57.4688 41.9214Z" fill="#B9B9B9"/>
+                                </g>
+                            </svg>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="product__info-desc">
+                    <span class="sub-title product__info-desc__sub-title">
+                        Стоимость за сутки
+                    </span>
+                    <p class="product__info-price">
+                        2 300 ₽
+                    </p>
+                    <form class="product__info-form flex">
+                        <label class="product__info-label">
+                            <span class="product__info-label__placeholder">Срок аренды</span>
+                            <select class="product__info-select form-input" tabindex="0">
+                                <option checked > Более 30 суток</option>
+                            </select>
+
+                        </label>
+                        <label class="product__info-label">
+                            <span class="product__info-label__placeholder">Ваше имя*</span>
+                            <input class="product__info-input form-input" type="text" tabindex="0"> 
+                        </label>
+                        <label class="product__info-label">
+                            <span class="product__info-label__placeholder">Телефон*</span>
+                            <input class="product__info-input form-input" type="tel" tabindex="0">
+                        </label>
+                        <label class="product__info-label">
+                            <span class="product__info-label__placeholder">Комментарий к заказу</span>
+                            <textarea class="product__info-input form-input" tabindex="0"></textarea>
+                        </label>
+                        <button class="btn btn-reset product__info-form__btn">Заказать автомобиль</button>
+                        <span class="product__info-form__desc">
+                            * Поле обязательно для заполнения.Нажимая «Заказать автомобиль», вы соглашаетесь с <a href="#" class="product__info-form__desc-link">политикой конфиденциальности.</a>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="product-text__wrapper">
+                <p class="product-text">
+                    Hyundai Solaris 2018 г.в. относится ко 2-му поколению, который предлагает водителю выбрать набор с мультимедийной системой в 8 дюймов. Выступ передней панели для удобства чуть повёрнут в сторону водителя, поэтому во время езды не придётся сильно отвлекаться, «уходить» рукой далеко в сторону. Руль снабжён кнопками для управления магнитолой. Электро-стеклоподъёмники оснащены подсветкой кнопок, а боковые зеркала имеют электропривод.
+                </p>
+            </div>
         </section>
-        <section class="car__park container flex">
-            <aside class="car__park-aside">
-                <form class="car__park-form car__park-form-top flex">
-                    <h4 class="car__park-form__filter"> Тип автомобиля</h4>
-                    <label class="car__park-form__label" tabindex="0">
-                        <input class="car__park-form__input" type="checkbox"> 
-                        <span class="car__park-form__text">Эконом</span>
-                    </label>
-                    <label class="car__park-form__label" tabindex="0">
-                        <input class="car__park-form__input" type="checkbox"> 
-                        <span class="car__park-form__text">Стандарт</span>
-                    </label>
-                    <label class="car__park-form__label" tabindex="0">
-                        <input class="car__park-form__input" type="checkbox">
-                        <span class="car__park-form__text">Комфорт + Кроссоверы</span>
-                    </label>
-                </form>
-                <form class="car__park-form flex">
-                    <h4 class="car__park-form__filter"> Трансмиссия </h4>
-                    <label class="car__park-form__label" tabindex="0">
-                        <input class="car__park-form__input" type="checkbox"> 
-                        <span class="car__park-form__text">Автоматическая</span>
-                    </label>
-                    <label class="car__park-form__label" tabindex="0">
-                        <input class="car__park-form__input" type="checkbox"> 
-                        <span class="car__park-form__text">Механическая</span>
-                    </label>
-                </form>
-            </aside>
-            <div class="flex car__park-list-wrapper">
-            <ul class="catalog__car-list list-reset car__park-list">
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
+        <section class="product-car__park container">
+            <span class="sub-title product-car__park-sbu-title">Автомобили</span>
+            <h2 class="title product-car__park-title"><span class="title-custom">Наш</span> автопарк</h2>
+            <ul class="product-car__park-list list-reset flex">
                 <li class="catalog__car-item flex" tabindex="0">
                     <div class="catalog__car-item__img">
                         <div class="catalog__car-item__img-bage">Хит</div>
@@ -315,10 +273,6 @@
                     </ul>
                 </li>
             </ul>
-            <button class="btn-reset car__park-list__btn btn"> Показать еще </button>
-        </div>
-            
-            
         </section>
         <section class="conditions container">
             <p class="conditions__sub-title sub-title">Спрашивали? Отвечаем</p>
@@ -500,6 +454,6 @@
             </div>
         </div>
     </footer>
-    <script src="/JS/index.js"></script>
+    <script src="/car/JS/index.js"></script>
 </body>
 </html>

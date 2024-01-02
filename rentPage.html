@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аренда авто Автопарк</title>
+    <title>Аренда авто страница товара</title>
     <link rel="stylesheet" href="./css/normalise.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container header__container">
-        <header class="flex">
+        <header class="flex header__product">
             <div class="header__logo" tabindex="0">
                 <a class="header__logo-link" href="#" tabindex="-1">
                     Rentdrive
@@ -95,231 +95,10 @@
         </header>
     </div>
     <main>
-        <section class="container car__park-decs">
-            <p class="car__park-decs__sub-title sub-title">
-                Автомобили
-            </p>
-            <h2 class="car__park-decs__title title"> <span class="title-custom">Наш</span> автопарк</h2>
-            <h3 class="car__park-decs__caption">Фильтры</h3>
-            <button class="btn-reset car__park-decs__btn btn"> Сбросить фильтры </button>
-        </section>
-        <section class="car__park container flex">
-            <aside class="car__park-aside">
-                <form class="car__park-form car__park-form-top flex">
-                    <h4 class="car__park-form__filter"> Тип автомобиля</h4>
-                    <label class="car__park-form__label" tabindex="0">
-                        <input class="car__park-form__input" type="checkbox"> 
-                        <span class="car__park-form__text">Эконом</span>
-                    </label>
-                    <label class="car__park-form__label" tabindex="0">
-                        <input class="car__park-form__input" type="checkbox"> 
-                        <span class="car__park-form__text">Стандарт</span>
-                    </label>
-                    <label class="car__park-form__label" tabindex="0">
-                        <input class="car__park-form__input" type="checkbox">
-                        <span class="car__park-form__text">Комфорт + Кроссоверы</span>
-                    </label>
-                </form>
-                <form class="car__park-form flex">
-                    <h4 class="car__park-form__filter"> Трансмиссия </h4>
-                    <label class="car__park-form__label" tabindex="0">
-                        <input class="car__park-form__input" type="checkbox"> 
-                        <span class="car__park-form__text">Автоматическая</span>
-                    </label>
-                    <label class="car__park-form__label" tabindex="0">
-                        <input class="car__park-form__input" type="checkbox"> 
-                        <span class="car__park-form__text">Механическая</span>
-                    </label>
-                </form>
-            </aside>
-            <div class="flex car__park-list-wrapper">
-            <ul class="catalog__car-list list-reset car__park-list">
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-                <li class="catalog__car-item flex" tabindex="0">
-                    <div class="catalog__car-item__img">
-                        <div class="catalog__car-item__img-bage">Хит</div>
-                        <img src="img/catalog-car1920.png" alt="Фото машины">
-                    </div>
-                    <div class="catalog__car-item__desc">
-                        <h3 class="catalog__car-item__title">Hyundai Solaris 2018</h3>
-                        <p class="catalog__car-item__price">От 1800 ₽/сутки</p>
-                    </div>
-                    <ul class="catalog__car-item__decc-list list-reset">
-                        <li class="catalog__car-item__desc-item">Год выпуска: 2020</li>
-                        <li class="catalog__car-item__desc-item">Трансмиссия: Автоматическая</li>
-                        <li class="catalog__car-item__desc-item">Двигатель: 1,6</li>
-                    </ul>
-                </li>
-            </ul>
-            <button class="btn-reset car__park-list__btn btn"> Показать еще </button>
-        </div>
-            
-            
-        </section>
+
+        se
+        
+        
         <section class="conditions container">
             <p class="conditions__sub-title sub-title">Спрашивали? Отвечаем</p>
             <h2 class="conditions__title title">
@@ -500,6 +279,6 @@
             </div>
         </div>
     </footer>
-    <script src="/JS/index.js"></script>
+    <script src="/car/JS/index.js"></script>
 </body>
 </html>
